@@ -1,0 +1,244 @@
+(() => {
+  "use strict";
+
+  const trustbadgeConfiguration = {
+  "process.env": {
+    "STAGE": "prod"
+  },
+  "shopData": {
+    "tsId": "X430AB156A7E4FE48A5B59F3513FB72B2",
+    "certificateType": "CLASSIC",
+    "plusProtectionAmount": 0,
+    "basicProtectionAmount": 0,
+    "overallRatingCount": 906,
+    "averageRating": 4.75,
+    "averageRatingCount": 358,
+    "language": "es",
+    "mainProtectionCurrency": "EUR",
+    "targetMarket": "ESP",
+    "randomReviews": [
+      {
+        "average": "5.00",
+        "buyerStatement": "Ha llegado perfecto",
+        "changeDate": "6/2/2023"
+      },
+      {
+        "average": "4.00",
+        "buyerStatement": "Todo bien",
+        "changeDate": "17/2/2023"
+      },
+      {
+        "average": "4.00",
+        "buyerStatement": "No es, de momento, lo que pueden hacer, es que necesito más tiempo y conocimiento (por mi parte) para mejorar la valoración.",
+        "changeDate": "18/1/2023"
+      }
+    ],
+    "serviceItems": [
+      "GUARANTEE_RECOG_CLASSIC_INTEGRATION",
+      "PRODUCT_REVIEWS",
+      "REVIEWS_AUTO_COLLECTION",
+      "NET_RECOMMENDATION_SCORE",
+      "INDIVIDUAL_REVIEW_FORM",
+      "DISABLE_REVIEWREQUEST_SENDING",
+      "MARS_EVENTS",
+      "MARS_REVIEWS",
+      "MARS_QUESTIONNAIRE",
+      "MARS_PUBLIC_QUESTIONNAIRE"
+    ],
+    "configurationItems": [],
+    "gradeSource": "etrusted",
+    "reviewSource": "etrusted",
+    "valid": "WIDGET",
+    "certificateState": "PRODUCTION",
+    "name": "hifasdaterra.com",
+    "maxProtectionAmount": 2500,
+    "maxProtectionDuration": 30
+  },
+  "ratingGradeAsWord": "Excelente",
+  "externalConfig": {
+    "trustbadgeScriptUrl": "https://widgets.trustedshops.com/assets/trustbadge.js",
+    "cdnDomain": "widgets.trustedshops.com",
+    "assetsUrl": "https://widgets.trustedshops.com/assets/",
+    "userInteractionAPI": "https://logging.trustbadge.com/v1/interactions",
+    "consumerServicesAPIv1": "https://api.trustedshops.com/rest/internal/v1/consumers/%s/services.json",
+    "consumerServicesAPIv2": "https://api.trustedshops.com/rest/internal/v2/consumers/%s/services.json",
+    "standardIntegrationAPI": "https://shops-si.trustedshops.com",
+    "classicGuaranteeForm": "https://www.trustedshops.com/shop/protection.php",
+    "consumerMembershipUpgradeURL": "https://plus.trustedshops.com/user/%locale/membership/upgrade",
+    "reviewEventAPI": "https://api.trustbadge.etrusted.com/accounts/%accountRef/channels/%channelRef/events",
+    "memberServiceAPI": "https://trustbadge.api.etrusted.com/shop/%s/memberservice",
+    "urls": {
+      "ratingProfile": "https://www.trustedshops.es/evaluacion/info_%tsId%.html?utm_source=shop&utm_medium=link&utm_content=%utmContentValue%&utm_campaign=%utmCampaignValue%",
+      "authenticReviews": "https://www.trustedshops.es/evaluacion/info_%tsId%.html#legal",
+      "imprint": "https://www.trustedshops.es/aviso-legal.html",
+      "imprintWithTracking": "https://www.trustedshops.es/aviso-legal.html?utm_content=menu_imprint__%displayVariant%&utm_campaign=%utmCampaignValue%",
+      "buyerAutoProtectionTerms": "https://www.trustedshops.es/tsdocument/BUYER_AUTO_PROTECTION_TERMS_es.pdf",
+      "qualityCriteriaPDF": "https://www.trustedshops.es/tsdocument/TS_QUALITY_CRITERIA_es.pdf",
+      "countryLanguageId": "es_ESP"
+    }
+  },
+  "displayVariant": "full",
+  "variant": "full",
+  "elementIdSuffix": "-98e3dadd90eb493088abdc5597a70810",
+  "activeLanguagePack": {
+    "badge.buyerProtection": "Garantía",
+    "badge.buyerProtectionBox.consumerMembership.paragraph_1": "Después de realizar tu comprar, puedes registrarte para obtener la adhesión básica gratuita de Trusted Shops. Esta incluye la Protección al Comprador hasta {basicProtectionAmount} para la compra actual, así como para tus siguientes compras en tiendas alemanas y austriacas con el Sello de Calidad de Trusted Shops.",
+    "badge.buyerProtectionBox.consumerMembership.paragraph_2": "Con %Trusted Shops% %PLUS% (incluida la garantía), tus compras estarán cubiertas hasta 20.000 € cada una por la Protección al Comprador (incluida la garantía), por 9,90 € al año, IVA incluido, con un duración mínima del contrato de 1 año. En ambos casos, el período de protección de la Protección al Comprador por compra es de {maxProtectionDuration} días.",
+    "badge.buyerProtectionBox.consumerMembership.paragraph_3": "Se aplican las %condiciones de adhesión y las condiciones de la Protección al Comprador%.",
+    "badge.buyerProtectionBox.excellence.paragraph_1": "En cada tienda con el sello de calidad de Trusted Shops podrás efectuar compras de forma segura, gracias a la protección al comprador de Trusted Shops. En esta tienda se te ofrecerá de un seguro sujeto a pago de la compra actual de hasta un valor de {maxProtectionAmount} durante el proceso de compra. El período de protección por cada compra es de {maxProtectionDuration} días.",
+    "badge.buyerProtectionBox.excellence.paragraph_2": "%Se aplican las Condiciones de garantía.%",
+    "badge.buyerProtectionBox.headline": "La garantía de Trusted Shops",
+    "badge.buyerProtectionBox.paragraph_1": "Compra con total seguridad en cualquier tienda con el Sello de Calidad de Trusted Shops gracias, entre otras cosas, a nuestra garantía de devolución. Después de finalizar el pedido, con tan solo un clic, podrás asegurar directamente la compra actual o asegurar automáticamente y de forma gratuita todas las compras futuras que hagas en tiendas con el Sello de Calidad de Trusted Shops, por un valor de hasta {amount}. La duración de la garantía por compra es de {maxProtectionDuration} días.",
+    "badge.buyerProtectionBox.paragraph_2": "Se aplican las %Condiciones de garantía y de participación.%",
+    "badge.buyerProtectionBox.sponsored.excellence.paragraph_1": "Puedes comprar de forma segura en todas las tiendas con el Sello de Calidad de Trusted Shops, en particular gracias a la Protección al Comprador de Trusted Shops. En esta tienda, se te ofrece una protección gratuita de tu compra actual hasta {amount} durante el proceso de compra. El período de protección por compra es de {maxProtectionDuration} días.",
+    "badge.buyerProtectionDescription": "Tu compra está asegurada hasta {amount}, sin importar como pagues.",
+    "badge.buyerProtectionHeadline": "Garantía independiente",
+    "badge.dataProtection": "Protección de datos",
+    "badge.default.buyer_protection.floating": "Protección al Comprador",
+    "badge.default.buyer_protection.inline": "Protección al Comprador",
+    "badge.gettingCertifiedForYou": "Nos estamos certificando para ti",
+    "badge.imprint": "Aviso legal",
+    "badge.loadingIndicator": "Cargando...",
+    "badge.menu.allRecommendations": "Todas las recomendaciones",
+    "badge.menu.allReviews": "Todas las valoraciones",
+    "badge.menu.authenticReviews": "Valoraciones auténticas",
+    "badge.menu.checkCertificate": "Comprobar certificado",
+    "badge.menu.close": "Cerrar",
+    "badge.menu.maximize": "Maximizar",
+    "badge.menu.minimize": "Minimizar",
+    "badge.menu.protectionTerms": "Condiciones de la garantía",
+    "badge.menu.protectionTerms.uc2": "Se aplican las condiciones de garantía",
+    "badge.menu.qualityCriteria": "Criterios de calidad",
+    "badge.menu.thirdPartyLicenses": "Licencias de terceros",
+    "badge.postReviewAfterYourPurchase": "Valóranos después de tu compra",
+    "badge.reviewsBox.by": "de",
+    "badge.reviewsBox.ratingDisclaimer": "La puntuación se calcula a partir de {averageRatingCount} comentarios en los últimos 12 meses de un total de {overallRatingCount} comentarios.",
+    "badge.reviewsBox.ratingGrade": "Nota de valoración",
+    "badge.reviewsBox.reviewAuthenticity": "Sobre la autenticidad de las valoraciones.",
+    "badge.reviewsBox.reviewsFor": "Valoraciones para",
+    "badge.reviewsBox.selectedReviews": "Valoraciones seleccionadas",
+    "badge.reviewsBox.showAllReviews": "Ver todas las valoraciones",
+    "badge.shopReviews": "Valoraciones de tienda",
+    "badge.trustmark": "Sello de Calidad",
+    "badge.trustmarkBox.headline": "Esta tienda está certificada, ¿qué significa esto?",
+    "badge.trustmarkBox.paragraph_1": "Cuando compras online, careces del contacto personal con el vendedor y no puedes ni tocar ni probar el producto. Para que aun así puedas pedir sin preocupaciones, el Sello de Calidad de Trusted Shops te muestra qué tiendas online son de confianza y ofrecen además un extraordinario servicio.",
+    "badge.trustmarkBox.paragraph_2": "En los %criterios de calidad% encontrarás todos los requisitos para la obtención del Sello de Calidad.",
+    "badge.trustmarkDescription": "Esta tienda cumple con los criterios de calidad de Trusted Shops",
+    "badge.trustmarkHeadline": "Aquí compras seguro",
+    "exitIntent.hint": "Introduce el código de descuento en el proceso de pedido para beneficiarte de la promoción.",
+    "exitIntent.title": "¡Continua el pedido y ahorra dinero!",
+    "NEW_unknown": "de Trusted Shops",
+    "NEW_unknown17": "Asegura esta y todas las compras futuras en tiendas con el Sello de Calidad de Trusted Shops hasta 20.000 €.",
+    "NEW_unknown19": "Has asegurado tu compra",
+    "NEW_unknown2b": "Aviso legal y protección de datos",
+    "NEW_unknown3": "Licencia",
+    "NEW_unknown4": "Condiciones de uso",
+    "NEW_unknown8": "Cada pedido está asegurado automáticamente",
+    "NEW_unknown9": "Garantía al comprador hasta {amount} en caso de no entrega o de no reembolso, p.ej. tras el desistimiento",
+    "NEW_unkonwn2": "Aviso legal y protección de datos",
+    "trustbadgeGenerator.mark_1": "Muy malo",
+    "trustbadgeGenerator.mark_2": "Malo",
+    "trustbadgeGenerator.mark_3": "Suficiente",
+    "trustbadgeGenerator.mark_4": "Bueno",
+    "trustbadgeGenerator.mark_5": "Excelente",
+    "trustcard.browserExtensionCTAButtonText": "Instalación gratuita",
+    "trustcard.browserExtensionInstallText": "Instala la %extensión gratuita% de Trusted Shops y te mostraremos directamente en la página de resultados de Google dónde comprar de manera segura.",
+    "trustcard.classic.bulletPoint_1": "Garantía automática con una cobertura de hasta {amount} para todas las compras",
+    "trustcard.classic.bulletPoint_2": "Disponible en tiendas con el Sello de Calidad de Trusted Shops",
+    "trustcard.classic.bulletPoint_3": "Todas las ventajas de los servicios de Trusted Shops",
+    "trustcard.classic.confirmation.heading": "¡Tu compra está asegurada hasta {amount}!",
+    "trustcard.classic.generalTermsAndConditions": "Condiciones generales",
+    "trustcard.classic.hello": "¡Hola!",
+    "trustcard.classic.securePurchaseFree": "Asegurarse de forma gratuita",
+    "trustcard.consumerMembership.confirmationHeadingUC6": "¡Tu compra está asegurada hasta un máximo de 20.000€!",
+    "trustcard.consumerMembership.fullGuaranteeBulletPoint": "Amplia garantía al comprador en caso de no entrega o de no reembolso, p.ej. tras el desistimiento",
+    "trustcard.consumerMembership.helpOthersWithYourRating": "Ayuda con tu valoración a otros compradores online. Por cada pedido, te enviaremos un correo electrónico, piediéndote que realices una valoración.",
+    "trustcard.consumerMembership.helpOthersWithYourRating.v2": "Ayuda a otros compradores online con tu valoración, que te pediremos a continuación por correo electrónico. %Condiciones de uso e información sobre la protección de datos%",
+    "trustcard.consumerMembership.onlySecureBasicAmount": "No, asegurar solo hasta {amount} y valorar",
+    "trustcard.consumerMembership.securePurchaseNow": "¡Asegurar ahora totalmente la compra!",
+    "trustcard.consumerMembership.uc1.bp1": "Garantía automática con una cobertura de hasta {amount} para todas las compras",
+    "trustcard.consumerMembership.uc1.bp2": "Garantía al comprador hasta {amount} en caso de no entrega o de no reembolso",
+    "trustcard.consumerMembership.uc1.bp3": "En todas las tiendas con el Sello de Calidad de Trusted Shops",
+    "trustcard.consumerMembership.uc2.bp1": "Garantía al comprador hasta {amount} en caso de no entrega o de no reembolso",
+    "trustcard.consumerMembership.uc2.bp2": "Servicio personalizado e independiente",
+    "trustcard.consumerMembership.uc2.bp3": "Asegurar cada pedido hasta {amount}",
+    "trustcard.consumerMembership.uc4.bp1": "Garantía al comprador hasta {amount} en caso de no entrega o de no reembolso",
+    "trustcard.consumerMembership.uc4.bp2": "Servicio personalizado e independiente",
+    "trustcard.consumerMembership.uc4.bp3": "Asegurar cada pedido hasta {amount}",
+    "trustcard.consumerMembership.uc4.text": "¡Tu compra está asegurada hasta {amount}!",
+    "trustcard.consumerMembership.uc6.bp2": "Servicio personalizado e independiente",
+    "trustcard.consumerMembership.uc6.bp3": "Todas las ventajas de la adhesión a Trusted Shops PLUS",
+    "trustcard.cta.secureEntirelyNow": "¡Asegura tu compra!",
+    "trustcard.error.heading": "Error:",
+    "trustcard.error.network": "no pudimos completar su solicitud. Verifique su conexión e intente nuevamente.",
+    "trustcard.orderAmount": "Importe del pedido",
+    "trustcard.rateLater.confirmationHeading": "¡Muchas gracias por tu confianza!",
+    "trustcard.rateLater.confirmationText": "Trusted Shops te enviará un correo electrónico para que puedas valorar tu pedido.",
+    "trustcard.rateLater.ctaButton": "Sí, quiero valorar",
+    "trustcard.rateLater.emailReminderShop": "Valora tu compra y ayuda a otros compradores. ¿Podemos pedirte tu opinión por correo electrónico dentro de unos días?",
+    "trustcard.rateLater.emailReminderShop.revoke-consent": "Puedes revocar tu consentimiento en cualquier momento.",
+    "trustcard.reviewsOnly.email": "E-Mail",
+    "trustcard.reviewsOnly.missingInputFormsText": "Sí, quiero valorar",
+    "trustcard.reviewsOnly.orderNumber": "Número de orden",
+    "trustcard.secureEntirely": "Asegurar completamente",
+    "trustcard.secureWithOneClick": "Asegurar con solo un clic",
+    "trustcard.secureYourPurchase": "¡Asegura tu compra!",
+    "trustcard.shop": "Tienda"
+  },
+  "buildTimestamp": "Tue, 21 Feb 2023 05:04:03 GMT",
+  "buildStage": "prod",
+  "basicProtectionAmount": 100,
+  "plusProtectionAmount": 20000,
+  "eTrustedRefs": {
+    "accountRef": "acc-33c0a888-86ab-47bb-b25a-2f1a100761b8",
+    "channelRef": "chl-7ed4c7b0-11f8-4d5b-8ed1-e27e960ffc07"
+  },
+  "marsRefs": {
+    "accountRef": "acc-33c0a888-86ab-47bb-b25a-2f1a100761b8",
+    "channelRef": "chl-7ed4c7b0-11f8-4d5b-8ed1-e27e960ffc07"
+  },
+  "signature": "00c0caf7eec851be836062d41753549eaa9040ee148e79f239d9537e27100478d86b60b7a551d8177ac521c639750eb8caa1b2dc873d7fade10e471846b2ea9e3f38cdc8aaeb4276a15c77716036fb63dd500adb6fe534486cf3c3e87feba4e76fc5e2ce8b59f0314a5a0e3f0c3a2e3b34314e67de5e7f4455f388de21299cc9d2f59d420df0dddc4909dcf91ef108094c3b5d72c36d066986a8c71991ed7e7875662561a3cdaaa60bdc4139832d46744656f54ad60de8ff62e6977cbaac1ad5a144a676ea4ad842cd63c415f8b3dc7e6ff61b299dc4465c4569213d9cf5ae10743699932b125df849a9fc7ffaa234e7acbac8c315606de18fb50f896003613e",
+  "sstsIntegrationParameters": null,
+  "twoLetterCountryCode": "ES",
+  "fullConsentManagementSolutionEnabled": "OFF"
+};
+
+  const loadTrustbadgeScript = (trustbadgeConfiguration) => {
+    const scriptUrl =
+      trustbadgeConfiguration.externalConfig.trustbadgeScriptUrl;
+
+    let scriptElement = document.querySelector(`script[src="${scriptUrl}"]`);
+    if (scriptElement) {
+      document.body.removeChild(scriptElement);
+    }
+
+    scriptElement = document.createElement("script");
+    scriptElement.src = scriptUrl;
+    scriptElement.charset = "utf-8";
+    scriptElement.setAttribute("data-type", "trustbadge-business-logic");
+
+    scriptElement.onerror = () => {
+      throw new Error(
+        "The Trustbadge script could not be loaded.\n" +
+          "I've tried to load this file but it did not work: " +
+          scriptUrl +
+          "\n" +
+          "Have you maybe selected an invalid TSID?"
+      );
+    };
+
+    scriptElement.onload = () => {
+      window.trustbadge?.load(trustbadgeConfiguration);
+    };
+
+    document.body.appendChild(scriptElement);
+  };
+
+  if (document.readyState === "complete") {
+    loadTrustbadgeScript(trustbadgeConfiguration);
+  } else {
+    window.addEventListener("load", () => {
+      loadTrustbadgeScript(trustbadgeConfiguration);
+    });
+  }
+})();

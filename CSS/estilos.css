@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto-Italic;
+    src: url(../Assets/Fonts/Roboto-Italic.ttf);   
+}
+.contenedorGrid{
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 15% 55% auto;
+    grid-template-rows: 0,5fr auto 1fr;
+    grid-template-areas: "nav header header" "nav main aside" "nav footer footer"
+
+}
+/*Comienza estilado del Header*/
+.Cabecera{
+    height: 270px;
+    position: sticky;
+    top: 0px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+
+/*Fin estilado del Header*/
+/*Comienzo estilado del Nav*/
+.Menu{
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    margin: 100px;
+}
+
+.Menu li{
+    float: left;
+    list-style: none;
+    font-size: 30px;
+    background-color: black;
+}
+.Menu a{
+    font-weight: bold;
+    color: rgba(202, 0, 0, 0.753);
+    text-decoration: none;
+    list-style: none;
+    margin: 100px;
+    border-bottom: 5px;
+    background-color: black;
+
+}
+
+/*Fin estilado del Nav*/
+/*Comienzo estilado del Main del Index*/
+
+.articulos{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:flex-start;
+
+}
+.SeccionPrincipalIndex{
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.74);
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 30px 30px 30px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+
+.Ganoderma{
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.74);
+    margin: 30px 30px 30px 30px;
+    border: 2px solid black;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+.TurkeyTale{
+    width: auto;
+    height: auto;
+    display: flex;
+    margin: 30px 30px 30px 30px;
+    background-color: rgba(255, 255, 255, 0.74);
+    border: 2px solid black;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Melena{
+    width: auto;
+    height: auto;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.74);
+    border: 2px solid black;
+    margin: 30px 30px 30px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Publicidad{
+    width: auto;
+    height: auto;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.74);
+    border: 2px solid black;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+    
+
+}
+
+/*fin estilado del Main Del Index*/
+
+.ImagenesPublicidad{
+    display: block;
+    padding: 30px;
+}
+/*Inicio Estilado del footer*/
+
+.RedesSociales ul{
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.LinksExternos{
+    margin-bottom: 50px;
+    width: auto;
+    height: auto;
+    display: block;
+    position: fixed;
+    float: right;
+
+}
+/*Inicia Estilado Galeria*/
+.GaleriaMain{
+    background-color: blueviolet;
+}
+.TituloPrincipalGaleria{
+    background-color: rgb(214, 47, 47, 0.74);
+    border: 5px black;
+    text-align: center;
+    display: block;
+}
+
+.ImagenesGaleria{
+    padding: 100px;
+}
+
+.TituloSecundarioGaleria{
+    text-align: center;
+    background-color: rgba(214, 47, 47, 0.74);
+}
+/*Inicia Estilado Historia*/
+.Origenes{
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(207, 206, 206, 0.74);
+    border: 2px solid black;
+    margin: 100px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.estiladoHistoria{
+    display: block;
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+}
+/*Inicia Estilado Nosotros*/
+.estiladoNosotros{
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+.videoNosotros{
+    align-items: center;
+    margin: 100px;
+}
+/*Inicia Estilado Contacto*/
+.SeccionQuienesSomos{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(117, 117, 117);
+    border-bottom: 5px;
+}
+.DondeEncontrarnos{
+    padding: 20px;
+}
+.Formulario{
+    margin-left: 50px;
+}
