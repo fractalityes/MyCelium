@@ -2,230 +2,268 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto-Italic;
-    src: url(../Assets/Fonts/Roboto-Italic.ttf);   
-}
-.contenedorGrid{
-    width: 100%;
-    margin: 0 auto;
-    grid-template-columns: 15% 55% auto;
-    grid-template-rows: 0,5fr auto 1fr;
-    grid-template-areas: "nav header header" "nav main aside" "nav footer footer"
-
-}
-/*Comienza estilado del Header*/
-.Cabecera{
-    height: 270px;
-    position: sticky;
-    top: 0px;
-    color: white;
-    background-color: rgb(0, 0, 0);
-    
+    font-family: 'Roboto', sans-serif;
 }
 
-
-/*Fin estilado del Header*/
-/*Comienzo estilado del Nav*/
-.Menu{
-    background-color: black;
-    display: inline-block;
-    position: relative;
-    margin: 100px;
+h1{
+font-size: 3.5em;
 }
+h2{
+font-size: 2.7em;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1,75em;
 
-.Menu li{
-    float: left;
+}
+.logo{
+    font-size: 5em;
+}
+ul{
     list-style: none;
-    font-size: 30px;
-    background-color: black;
 }
-.Menu a{
+button{
+    font-size: 1.5em;
+    margin: 40px;
     font-weight: bold;
-    color: rgba(202, 0, 0, 0.753);
-    text-decoration: none;
-    list-style: none;
-    margin: 100px;
-    border-bottom: 5px;
-    background-color: black;
-
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(0, 0, 0, 5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 5);
+    color: rgb(0, 0, 0);
+    background-color: blueviolet;    
 }
-
-/*Fin estilado del Nav*/
-/*Comienzo estilado del Main del Index*/
-
-.articulos{
-    background-color: blueviolet;
+.colorPalabra{
+    color: blueviolet;
+}
+.containerNav{
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
-    align-items:flex-start;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.principalHeader{
+    
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+header .ImgContainer{
+    width: auto;
+    display: flex;
+}
+header .container{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    align-items: center;
+}
+
+header .navBar {
+    display: flex;
+    
 
 }
-.SeccionPrincipalIndex{
-    width: auto;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.74);
-    text-align: center;
+@media (max-width: 600px){
+    .navBar{
+        background-color: rgb(255, 255, 255);
+        flex-direction: column;
+        padding: 1px;
+
+    }
+}
+
+header .botonNav{
+    display: flex;
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
     padding: 10px;
-    border: 2px solid black;
-    margin: 30px 30px 30px 30px;
+    border: 2px black;
     border-radius: 10px;
-    font-size: 20px;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    margin: 60px;
     align-items: center;
-    
-}
-
-.Ganoderma{
-    width: auto;
-    height: auto;
-    background-color: rgba(255, 255, 255, 0.74);
-    margin: 30px 30px 30px 30px;
-    border: 2px solid black;
-    font-size: 20px;
-    border-radius: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-
-}
-.TurkeyTale{
-    width: auto;
-    height: auto;
-    display: flex;
-    margin: 30px 30px 30px 30px;
-    background-color: rgba(255, 255, 255, 0.74);
-    border: 2px solid black;
-    font-size: 20px;
-    border-radius: 10px;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.Melena{
-    width: auto;
-    height: auto;
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.74);
-    border: 2px solid black;
-    margin: 30px 30px 30px 30px;
-    font-size: 20px;
-    border-radius: 10px;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.Publicidad{
-    width: auto;
-    height: auto;
-    display: block;
-    background-color: rgba(255, 255, 255, 0.74);
-    border: 2px solid black;
-    font-size: 20px;
-    border-radius: 10px;
-    text-align: center;
     text-decoration: none;
-    list-style: none;
-    justify-content: center;
-    align-content: center;
-    align-items: stretch;
-    
+    font-weight: bold;
 
 }
+#principalDelIndex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    color: white;
+    background-image: url(../Assets/IMG/Nuevas/pexels-vadym-alyekseyenko-10923302.jpg);
+    background-size: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,5),
+        rgba(0,0,0,5),
+        );
+    background-repeat: no-repeat;
+}
+.class-container{
+    text-align: center;
+    padding: 10px 12px;
+}
+.especiesIndex{
+background-color: rgb(30, 30, 30);
+padding: 30px 12px;
+}
+@media (max-width: 600px){
+    .ImgContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
-/*fin estilado del Main Del Index*/
 
-.ImagenesPublicidad{
-    display: block;
+
+.especiesIndex .container{
+    text-align: center;
+    color: white;
+}
+.especiesIndex .especies{
     padding: 30px;
 }
-/*Inicio Estilado del footer*/
-
-.RedesSociales ul{
-    list-style: none;
+.kitsCultivo .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+.kitsCultivo li{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+footer .container{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align:left;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 40px;
+}
+footer a{
+    justify-content: space-between;
     text-decoration: none;
+    font-size: 2em;
+}
+
+
+.containerNosotros{
+    display: flex;
+    width: 100%;
+
+}
+/*Comienza estilado de Contacto*/
+
+.seccionQuienesSomos{
+    width: 100%;
+    padding: 20px 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.dondeEncontrarnos{
+    width: 100%;
     
-}
-
-.LinksExternos{
-    margin-bottom: 50px;
-    width: auto;
-    height: auto;
-    display: block;
-    position: fixed;
-    float: right;
-
-}
-/*Inicia Estilado Galeria*/
-.GaleriaMain{
-    background-color: blueviolet;
-}
-.TituloPrincipalGaleria{
-    background-color: rgb(214, 47, 47, 0.74);
-    border: 5px black;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
-    display: block;
+    flex-direction: row;
 }
-
-.ImagenesGaleria{
-    padding: 100px;
-}
-
-.TituloSecundarioGaleria{
+.formulario{
+    background-color: black;
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
-    background-color: rgba(214, 47, 47, 0.74);
+    flex-direction: row;
 }
-/*Inicia Estilado Historia*/
-.Origenes{
-    display: inline-block;
+.contactoTexto{
+    background-color: black;
+    color: white;
     padding: 20px;
-    background-color: rgba(207, 206, 206, 0.74);
-    border: 2px solid black;
-    margin: 100px;
-    font-size: 20px;
-    border-radius: 10px;
-    text-align: center;
+    font-size: 1.3rem;
 }
-.estiladoHistoria{
-    display: block;
-    background-color: blueviolet;
-    width: 100%;
-    height: 100%;
+
+/*Inicio Estilado Historia*/
+.origenes{
+    width: auto;
+    text-align: center ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-/*Inicia Estilado Nosotros*/
-.estiladoNosotros{
-    background-color: blueviolet;
-    width: 100%;
-    height: 100%;
+.DDHC{
+    background-color: black;
+    color: white;
+    margin-left: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+}
+.masInfo{
     text-align: center;
-    font-size: 25px;
+    background-color: black;
+    color: white;
+    margin-left: 0;
+}
+.videohistoria{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+/*Inicio Estilado Nosotros*/
+
+.estiladoNosotrosPrincipal{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.textoNosotros{
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+.estiladoNosotrosPrincipal p{
+    text-align: center;
 }
 .videoNosotros{
-    align-items: center;
-    margin: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 50px;   
 }
-/*Inicia Estilado Contacto*/
-.SeccionQuienesSomos{
-    text-align: center;
+
+
+/*Inicio Estilado Galería */
+#carouselExampleIndicator{
+    display: flex;
+}
+.carousel-inner{
+    padding: 40px;
+}
+.textoGal{
+    background-color: black;
+    color: white;
     padding: 20px;
-    background-color: rgb(117, 117, 117);
-    border-bottom: 5px;
 }
-.DondeEncontrarnos{
-    padding: 20px;
-}
-.Formulario{
-    margin-left: 50px;
-}
+
+
+

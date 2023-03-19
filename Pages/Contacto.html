@@ -1,104 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <!--Favicon-->
-    <link rel="shortcut icon" href="../Favicon.ico" type="image/x-icon">
-    <!--Estilos-->
-    <link rel="stylesheet" href="../CSS/estilos.css">  
-    <!--Estilos-->
-
-</head>    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/a755b460a0.js" crossorigin="anonymous"></script>
+        <title>Contacto</title>
+    </head>
     <body>
-        <!--Inicio de Encabezado-->
-        <header class="Cabecera">
-        <img class="logo" src="../Favicon.ico" width="100px" alt="LOGO">
-        <!--Logo-->
-        <h2>My Celium</h2>
-        <!--Inicio nav-->
-                <nav class="Menu">
-                    <ul>
-                        <li>
-                            <a class="Links" href="../index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a class="Links" href="./Galeria.html">Galeria</a>
-                        </li>
-                        <li>
-                            <a class="Links" href="./Historia.html">Historia</a>
-                        </li>
-                        <li>
-                            <a class="linkNav" href="./Nosotros.html">Nosotros</a>
-                        </li>
-                            <li>
-                            <a class="Links" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-                <!--Fin de Nav-->
+        <header class="principalHeader">
+            <div class="ImgContainer">
+            <img src="../Assets/IMG/LOGO.PNG" width="30%" alt="Logo">
+            </div>
+            <div class="container">
+                <nav class="navBar">
+                        <a class="botonNav" href="../index.html">Inicio</a>
+                        <a class="botonNav" href="./galeria.html">Galeria</a>
+                        <a class="botonNav" href="./historia.html">Historia</a>
+                        <a class="botonNav" href="./nosotros.html">Nosotros</a>
+                        <a class="botonNav" href="#">Contacto</a>
+                    </nav>
+                </div>
         </header>
-        <!--Fin del encabezado-->
-    <main>
-        <!--Comienzo del main-->
-<section class="SeccionQuienesSomos">
-    <h1>Quienes Somos</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore voluptate adipisci commodi totam culpa, qui, tempora impedit excepturi hic quo iusto dolor accusantium suscipit delectus quia at doloribus beatae! Iure.</p>
-</section>
-  <!--Fin de la primer sección-->
-<section class="DondeEncontrarnos">
-    <h2>Donde Encontrarnos</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.410076968872!2d-68.6757864347092!3d-16.555853738581884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915ebd0952400045%3A0x89fec49f43cd99dd!2sTiwanaku%2C%20Bolivia!5e0!3m2!1ses!2sar!4v1676253422356!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
-<section  class="Formulario">
-    <h2>Contacto</h2>
-    <h3>Newsletter</h3>
-    <div>
-        <form action="">
-            <!--Label es el nombre de lo que hay que completar-->
-            <!--Type es el tipo de contenido que hay que ingresar ejemplo contraseña numeros etcétera-->
-        <label for="">Nombre</label>
-        <input type="text" placeholder="Escriba su Nombre" required>
-    </div>
-    <div>
-        <label for="">Apellido</label>
-        <input type="text" placeholder="Escriba su Apellido" required>
-    </div>
-        <div>
-            <label for="">Email</label>
-            <input type="email"placeholder="Escriba su Email" required>
-        </div>
-        <div>
-            <label for="">Contraseña</label>
-            <input type="password"placeholder="Contraseña" required>
-        </div>
-        <div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Comentario"></textarea required>
-        </div>
-        <div>
-            <input type="submit" value="Enviar Formulario">
-            <input type="reset" value="Limpiar Formulario">
-        </form>
-    </div>
-    </div>
-    
-</section>
-    </main>
+        <main class="container">
+            <section class="seccionQuienesSomos">
+                <h1>Quienes Somos</h1>
+                <div class="contactoTexto">
+                <p>Conectarnos desde la inspiración que provoca la funga
 
-
-    <footer>
-        <div class="Redes Sociales">
-            <ul>
-                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-                <a href="https://ektoplazm.com/" target="_blank">Music Ektoplasm</a>
-                <a href="https://www.google.com/maps" target="_blank">Donde Encontrarnos</a>
-            </ul>
-        </div>
-    </footer>
-    <footer>
-        <a href="#top">Ir al Top</a>
-    </footer>
-</body>
-</html>
+                    Si se trata de (bio)inspirarnos, el micelio es una parte del hongo que nos ayuda a analizar la naturaleza desde otra perspectiva. Conocer y contemplar los ciclos de estos organismos es una buena forma de devolver la capacidad de asombro a las personas, y conectar lazos con la naturaleza. Por otro lado, surge un espacio de estudio científico tanto para la conservación de estos ecosistemas, como para el desarrollo de nueva tecnología y aplicaciones en las industrias de los alimentos, cosmética, textiles, biorremediación, entre otros. 
+                    
+                    Según Nélida Phol, doctora en ecología, máster en comunicación científica y directora de comunicaciones del Instituto de Ecología y Biodiversidad (IEB), es importante aterrizar que la ciencia no resolverá todo y no podemos  esperar que  los aportes que haga sean en el corto plazo. “Es posible que nos ayude, siempre cuando la comunicación de la ciencia nos muestre un poco a dónde nos está llevando la vida que tenemos, vida industrial a la que también ha contribuido la ciencia y la tecnología, osea es parte del problema y también puede ser parte de la solución”, afirma Phol.</p>
+                </div>
+            </section>
+        
+            <section class="dondeEncontrarnos">
+                <h2>Donde Encontrarnos</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.410076968872!2d-68.6757864347092!3d-16.555853738581884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915ebd0952400045%3A0x89fec49f43cd99dd!2sTiwanaku%2C%20Bolivia!5e0!3m2!1ses!2sar!4v1676253422356!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <section  class="formulario">
+                    <h2>Contacto</h2>
+                    <h3>Newsletter</h3>
+                    </section>
+<!--Inicio del Formulario-->
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Ingresa la cuenta de correo en donde quieras recibir información</div>
+                        </div>
+                        <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Nombre y Apellido</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Comentarios</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                            <div id="emailHelp" class="form-text">Dejanos algún comentario o especies de interés</div>
+                            </div>
+                        <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Incluir ofertas de productos</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">GO!</button>
+                </form>
+            <footer>
+                <div class="container">            
+                    <a  href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://articulo.mercadolibre.com.ar/MLA-1143754203-kit-cultivo-hongos-medicinales-y-gourmet-kit-n2-_JM#position=5&search_layout=grid&type=item&tracking_id=de220131-5b7a-4110-a447-cb06360a9cc1" target="_blank"><i class="fa-sharp fa-solid fa-store"></i></a>
+                    <a href="https://goo.gl/maps/PWR14Fz4WUWX8oxMA" target="_blank"><i class="fa-solid fa-map-pin"></i></a>
+                </div>    
+            </footer>
+        </body>
+    </html>
